@@ -14,10 +14,20 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-
 .banner h2 {
   font-size: 66px;
   padding: 0;
+}
+.btn {
+  border: 0px;
+  background-color: #b5d3eb;
+  padding: 12px 26px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+.btn:hover {
+  color: #ffffff;
 }
 
 main {
@@ -56,11 +66,12 @@ section h2 {
 
 /* prices */
 .card {
-  border: 1px solid white;
+  border: 1px solid #f2f2f2;
   border-radius: 15px;
   width: 24%;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
   padding: 36px;
+  background-color: #f2f2f2;
 }
 .card-content {
   padding: 0;
@@ -70,8 +81,17 @@ section h2 {
   margin-top: 0;
   padding-left: 0;
 }
-.card:first-child {
+.card .card-content:first-of-type {
   border-bottom: 1px solid #ded8d8;
+}
+.card-title {
+  font-size: 26px;
+  color: #86bfed;
+}
+.card-price {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 16px;
 }
 .infos {
   padding: 24px 0;
@@ -81,7 +101,7 @@ footer {
   position: absolute;
   width: 100%;
   right: 0;
-  background-color: #b5d3eb;;
+  background-color: #b5d3eb;
   padding: 0;
 }
 .social-media {
