@@ -1,7 +1,5 @@
-* {
-  padding: 0 20px;
-}
 body {
+  padding: 0 20px;
   background-color: #eaf2ea;
 }
 
@@ -17,6 +15,14 @@ nav {
 .banner h2 {
   font-size: 66px;
   padding: 0;
+}
+.book-cover {
+  width: 40%;
+  height: 40%;
+}
+.cover {
+  width: 100%;
+  object-fit: cover;
 }
 .btn {
   border: 0px;
@@ -59,6 +65,17 @@ section h2 {
 .author-infos {
   width: 50%;
 
+}
+.author-pic {
+  width: 28%;
+  height: 28%;
+  overflow: hidden;
+  border-radius: 38px;
+}
+.author-pic img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
 }
 .author-infos h2 {
   text-align: left;
