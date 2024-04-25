@@ -2,23 +2,31 @@ body {
   padding: 0 100px;
   background-color: #eaf2ea;
 }
+section {
+  padding: 32px 0;
+}
 
 nav {
   padding: 0;
 }
 .banner {
-  padding: 140px 20px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .banner h2 {
-  font-size: 66px;
+  font-size: 90px;
   padding: 0;
+  margin-bottom: 0;
+}
+.banner h3 {
+  font-size: 60px;
+  margin-top: 10px;
 }
 .book-cover {
-  width: 50%;
-  height: 50%;
+  width: 30%;
+  height: 30%;
 }
 .cover {
   width: 100%;
@@ -53,8 +61,8 @@ section h2 {
   align-items: center;
 }
 .book-pic {
-  width: 26%;
-  height: 26%;
+  width: 16%;
+  height: 16%;
 }
 .description-cover {
   width: 100%;
