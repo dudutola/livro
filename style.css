@@ -1,9 +1,24 @@
 body {
-  padding: 0 100px;
+  max-width: 1440px;
+  width: 60%;
+  margin: auto;
   background-color: #eaf2ea;
+}
+main {
+  padding: 0 60px;
+}
+main h2 {
+  text-align: center;
+  font-weight: 100;
 }
 section {
   padding: 32px 0;
+}
+section h2 {
+  font-size: 36px;
+}
+p {
+  line-height: 1.5;
 }
 
 nav {
@@ -16,7 +31,7 @@ nav {
   align-items: center;
 }
 .banner h2 {
-  font-size: 90px;
+  font-size: 80px;
   padding: 0;
   margin-bottom: 0;
   color: red;
@@ -45,17 +60,7 @@ nav {
   color: #ffffff;
 }
 
-main {
-  padding: 50px;
-}
-main h2 {
-  text-align: center;
-}
-section h2 {
-  font-size: 36px;
-}
-
-/* .book-description */
+/* section book */
 .book-description {
   display: flex;
   justify-content: space-between;
@@ -64,6 +69,7 @@ section h2 {
 .book-pic {
   width: 16%;
   height: 16%;
+  min-width: 200px;
 }
 .description-cover {
   width: 100%;
@@ -71,16 +77,23 @@ section h2 {
 .descriptions {
   width: 50%;
 }
+.paragraph-title {
+  margin-bottom: 0;
+}
+.book-paragraph {
+  margin-top: 4px;
+}
 
 /* author */
 .author {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  height: auto;
 }
 .author-infos {
   width: 50%;
-
 }
 .author-pic {
   width: 28%;
