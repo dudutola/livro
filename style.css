@@ -2,14 +2,34 @@
 body {
   background-color: #eaf2ea;
 }
-h1 {
-  color: red;
+
+header {
+  h1 {
+    color: red;
+  }
+  .book-cover {
+    display: block;
+    margin: auto;
+    width: 200px;
+  }
+  .banner-title {
+    text-align: center;
+  }
 }
-.book-cover {
-  display: block;
-  margin: auto;
-  width: 200px;
-}
-.book-title {
-  text-align: center;
+
+main {
+  .description-cover {
+    display: none;
+  }
+
+  .book {
+    background-color: #bcc2bc;
+    margin: 24px 0;
+  }
+
+  .author-image {
+    display: block;
+    margin: auto;
+    width: 200px;
+  }
 }
