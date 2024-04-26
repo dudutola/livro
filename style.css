@@ -41,20 +41,25 @@ main {
   }
 
   header {
+    margin-top: 20px;
     h1 {
       font-size: 80px;
+      margin-bottom: 0;
     }
     h2 {
       font-size: 60px;
+      margin-top: 8px;
+      font-weight: 100;
     }
     .book-cover {
       margin: 0;
+      width: 216px;
     }
     .banner {
-      margin: auto 100px;
+      margin: auto 0;
       display: flex;
       justify-content: space-between;
-      padding: 24px;
+      padding: 32px 0;
     }
     .banner-title {
       text-align: left;
@@ -62,9 +67,16 @@ main {
   }
 
   main {
+    section,
+    .author {
+      margin: 32px 0;
+    }
     h2 {
       font-size: 32px;
       font-weight: 100;
+    }
+    p {
+      line-height: 1.5;
     }
     .book {
       h2 {
@@ -77,12 +89,22 @@ main {
     }
     .description-cover {
       display: block;
-      width: 200px;
+      width: 240px;
+    }
+    .paragraph-title {
+      margin-bottom: 0;
+    }
+    .book-paragraph {
+      margin-top: 12px;
     }
 
     .author {
       display: flex;
       gap: 70px;
+    }
+    .author-image {
+      width: 260px;
+      border-radius: 24px;
     }
   }
 }
