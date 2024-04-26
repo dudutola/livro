@@ -81,9 +81,8 @@ footer {
   }
 
   main {
-    section,
-    .author {
-      margin: 32px 0;
+    section {
+      margin: 80px 0;
     }
     h2 {
       font-size: 32px;
@@ -119,6 +118,23 @@ footer {
     .author-image {
       width: 260px;
       border-radius: 24px;
+    }
+  }
+
+  footer {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    background-color: #b5d3eb;
+
+    .socials {
+      padding: 20px 120px;
+      flex-direction: row;
+      justify-content: space-between;
+
+      a {
+        font-size: 20px;
+      }
     }
   }
 }
