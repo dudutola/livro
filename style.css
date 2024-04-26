@@ -33,3 +33,56 @@ main {
     width: 200px;
   }
 }
+
+@media (min-width: 768px) {
+  body {
+    width: 768px;
+    margin: auto;
+  }
+
+  header {
+    h1 {
+      font-size: 80px;
+    }
+    h2 {
+      font-size: 60px;
+    }
+    .book-cover {
+      margin: 0;
+    }
+    .banner {
+      margin: auto 100px;
+      display: flex;
+      justify-content: space-between;
+      padding: 24px;
+    }
+    .banner-title {
+      text-align: left;
+    }
+  }
+
+  main {
+    h2 {
+      font-size: 32px;
+      font-weight: 100;
+    }
+    .book {
+      h2 {
+        text-align: center;
+      }
+    }
+    .book-description {
+      display: flex;
+      gap: 70px;
+    }
+    .description-cover {
+      display: block;
+      width: 200px;
+    }
+
+    .author {
+      display: flex;
+      gap: 70px;
+    }
+  }
+}
