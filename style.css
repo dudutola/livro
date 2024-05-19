@@ -23,7 +23,7 @@ header {
 .btn {
   border: 0px;
   background-color: #b5d3eb;
-  padding: 14px 26px;
+  padding: 14px 18px;
   font-size: 18px;
   font-weight: bold;
   border-radius: 8px;
@@ -85,11 +85,11 @@ main {
     border-bottom: 1px solid #ded8d8;
   } */
   .card-title {
-    font-size: 24px;
+    font-size: 18px;
     color: #86bfed;
   }
   .card-price {
-    font-size: 70px;
+    font-size: 40px;
     font-weight: bold;
     margin-bottom: 16px;
   }
