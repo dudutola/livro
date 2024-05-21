@@ -67,6 +67,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 28px 0 12px;
+    text-align: center;
   }
   .card {
     border: 1px solid #f2f2f2;
