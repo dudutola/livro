@@ -67,7 +67,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 28px 0 12px;
+    margin: 36px 0 32px;
     text-align: center;
   }
   .card {
@@ -209,6 +209,7 @@ footer {
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin: 36px 0 66px;
     }
     .card {
       border: 1px solid #f2f2f2;
