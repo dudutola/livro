@@ -68,6 +68,10 @@ main {
 
   .book {
     margin: 24px 0;
+
+    .mobile-hide {
+      display: none;
+    }
   }
 
   .author-image {
@@ -248,6 +252,9 @@ footer {
     .book {
       h2 {
         text-align: center;
+      }
+      .mobile-hide {
+        display: block;
       }
     }
     .book-description {
