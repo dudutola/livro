@@ -202,7 +202,8 @@ footer {
 
 @media (min-width: 768px) {
   body {
-    width: 768px;
+    /* width: 768px; */
+    width: 820px;
   }
 
   header {
@@ -221,7 +222,8 @@ footer {
     }
     .book-cover {
       margin: 0;
-      width: 216px;
+      /* width: 216px; */
+      width: 244px;
     }
     .banner {
       margin: auto 0;
@@ -270,7 +272,9 @@ footer {
     }
     .description-cover {
       display: block;
-      width: 240px;
+      /* width: 240px; */
+      width: 320px;
+      height: 500px;
     }
     .paragraph-title {
       margin-bottom: 0;
