@@ -1,6 +1,6 @@
 body {
   background-color: #eaf2ea;
-  width: 820px; /* Fixed width for desktop */
+  width: 100%;
   margin: auto;
 }
 
@@ -9,49 +9,52 @@ header {
 }
 
 header nav {
-  margin-left: 0px;
-  margin-top: 12px; /* Ensure proper spacing */
+  margin-left: 8px;
+  margin-top: 12px;
 }
 
 header h1 {
-  font-size: 80px;
-  margin-bottom: 0;
-  color: red; /* Adjusted for desktop */
-}
-
-header h2 {
-  font-size: 60px;
-  margin-top: 8px;
+  color: red;
 }
 
 header .book-cover {
   display: block;
   margin: auto;
-  width: 244px;
+  width: 200px;
 }
 
 header .banner {
-  margin: auto 0;
-  display: flex;
-  justify-content: space-between;
-  padding: 32px 0;
+  margin-bottom: 50px;
 }
 
 header .banner-title {
-  text-align: left;
+  text-align: center;
+  margin-bottom: 24px;
 }
 
 .btn {
   border: 0px;
   background-color: #b5d3eb;
-  padding: 14px 26px;
-  font-size: 26px;
+  padding: 14px 18px;
+  font-size: 18px;
   font-weight: bold;
   border-radius: 8px;
 }
 
+.btn:hover {
+  color: #ffffff;
+}
+
 .btn-desktop {
-  display: block;
+  display: none;
+}
+
+.btn-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 28px;
+  text-decoration: none;
 }
 
 main {
@@ -59,23 +62,12 @@ main {
   background-color: #e6efe6;
 }
 
-main section {
-  margin: 80px 0;
-}
-
 main h2 {
-  font-size: 32px;
   font-weight: 100;
 }
 
-main p {
-  line-height: 1.5;
-}
-
 main .description-cover {
-  display: block;
-  width: 320px;
-  height: 500px;
+  display: none;
 }
 
 main .paragraph-title {
@@ -83,53 +75,38 @@ main .paragraph-title {
 }
 
 main .book-paragraph {
-  margin-top: 12px;
+  margin-top: 8px;
 }
 
 main .book {
   margin: 24px 0;
 }
 
-main .book h2 {
-  text-align: center;
-}
-
 main .book .mobile-hide {
-  display: block;
-}
-
-main .book-description {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-}
-
-main .author {
-  display: flex;
-  gap: 70px;
+  display: none;
 }
 
 main .author-image {
   display: block;
   margin: auto;
-  width: 260px;
-  border-radius: 24px;
+  width: 200px;
+  border-radius: 20px;
 }
 
 main .price {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 36px 0 66px;
+  margin: 36px 0 32px;
   text-align: center;
 }
 
 main .card {
   border: 1px solid #f2f2f2;
   border-radius: 15px;
-  width: 26%;
+  width: 110px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
-  padding: 36px;
+  padding: 24px;
   background-color: #f2f2f2;
 }
 
@@ -144,12 +121,12 @@ main .card-content p {
 }
 
 main .card-title {
-  font-size: 24px;
+  font-size: 18px;
   color: #86bfed;
 }
 
 main .card-price {
-  font-size: 70px;
+  font-size: 40px;
   font-weight: bold;
   margin-bottom: 16px;
 }
@@ -160,9 +137,9 @@ main .infos {
 
 .launch-editor {
   display: flex;
-  justify-content: space-around;
   margin: 40px 0;
-  padding: 20px;
+  padding: 0;
+  border-radius: 10px;
 }
 
 .launch-editor a {
@@ -172,9 +149,9 @@ main .infos {
 .launch-editor .launch,
 .launch-editor .editor {
   flex: 1;
-  margin: 0 20px;
+  margin: 0 12px;
   text-align: center;
-  padding: 20px;
+  padding: 0;
   background-color: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0px 6px 12px 6px rgba(0, 0, 0, 0.1);
@@ -187,7 +164,7 @@ main .infos {
 }
 
 .launch-editor h2 {
-  font-size: 24px;
+  font-size: 20px;
   color: #333;
   margin-bottom: 10px;
 }
@@ -216,7 +193,7 @@ main .infos {
 }
 
 .logo {
-  width: 100px;
+  width: 50px;
 }
 
 footer {
@@ -228,7 +205,176 @@ footer {
 
 footer .socials {
   display: flex;
-  padding: 24px 120px;
+  padding: 24px;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (min-width: 768px) {
+  body {
+    width: 900px;
+  }
+
+  header {
+    margin-top: 20px;
+  }
+
+  header nav {
+    margin-left: 0px;
+  }
+
+  header h1 {
+    font-size: 80px;
+    margin-bottom: 0;
+  }
+
+  header h2 {
+    font-size: 60px;
+    margin-top: 8px;
+  }
+
+  header .book-cover {
+    margin: 0;
+    width: 244px;
+  }
+
+  header .banner {
+    margin: auto 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+  }
+
+  header .banner-title {
+    text-align: left;
+  }
+
+  .btn {
+    padding: 14px 26px;
+    font-size: 26px;
+  }
+
+  .btn-mobile {
+    display: none;
+  }
+
+  .btn-desktop {
+    display: block;
+  }
+
+  main section {
+    margin: 80px 0;
+  }
+
+  main h2 {
+    font-size: 32px;
+    font-weight: 100;
+  }
+
+  main p {
+    line-height: 1.5;
+  }
+
+  main .book h2 {
+    text-align: center;
+  }
+
+  main .book .mobile-hide {
+    display: block;
+  }
+
+  main .book-description {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+
+  main .description-cover {
+    display: block;
+    width: 320px;
+    height: 500px;
+  }
+
+  main .paragraph-title {
+    margin-bottom: 0;
+  }
+
+  main .book-paragraph {
+    margin-top: 12px;
+  }
+
+  main .author {
+    display: flex;
+    gap: 70px;
+  }
+
+  main .author-image {
+    width: 260px;
+    border-radius: 24px;
+  }
+
+  main .price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 36px 0 66px;
+  }
+
+  main .card {
+    border: 1px solid #f2f2f2;
+    border-radius: 15px;
+    width: 26%;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
+    padding: 36px;
+    background-color: #f2f2f2;
+  }
+
+  main .card-content {
+    padding: 0 0 16px;
+  }
+
+  main .card-content h3,
+  main .card-content p {
+    margin: 0;
+    padding-left: 0;
+  }
+
+  main .card-title {
+    font-size: 24px;
+    color: #86bfed;
+  }
+
+  main .card-price {
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+  main .infos {
+    padding: 24px 0;
+  }
+
+  .launch-editor {
+    justify-content: space-around;
+    margin: 40px 0;
+    padding: 20px;
+  }
+
+  .launch-editor .launch,
+  .launch-editor .editor {
+    margin: 0 20px;
+    padding: 20px;
+  }
+
+  footer .socials {
+    padding: 24px 120px;
+  }
+
+  footer .socials a {
+    font-size: 20px;
+  }
+
+  .logo {
+    width: 100px;
+  }
 }
