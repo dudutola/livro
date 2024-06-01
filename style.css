@@ -268,7 +268,9 @@ footer {
     }
     .book-description {
       display: flex;
-      gap: 70px;
+      align-items: center;
+      /* gap: 70px; */
+      gap: 50px;
     }
     .description-cover {
       display: block;
