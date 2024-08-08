@@ -59,16 +59,18 @@ header .banner-title {
 
 .banner-launch {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  width: 84%;
+  margin: auto;
+  text-align: center;
   background-color: #f23e6714;
   border: 1px solid #f23e6714;
   border-radius: 8px;
   padding: 20px;
-  margin-bottom: 16px;
 }
 
 .banner-launch p {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .banner-date {
@@ -78,7 +80,7 @@ header .banner-title {
 }
 
 .banner-date .title {
-  font-size: 26px;
+  font-size: 24px;
   color: red;
   font-weight: bold;
   border-bottom: 1px solid;
@@ -186,7 +188,7 @@ main .infos {
   flex: 1;
   margin: 0 12px;
   text-align: center;
-  padding: 0;
+  padding: 16px;
   background-color: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0px 6px 12px 6px rgba(0, 0, 0, 0.1);
@@ -199,7 +201,7 @@ main .infos {
 }
 
 .launch-editor h2 {
-  font-size: 32px;
+  font-size: 26px;
   color: #fb0202;
   margin-bottom: 10px;
 }
@@ -241,13 +243,13 @@ main .infos {
 
 .launch-date p:nth-child(1),
 .launch-date p:nth-child(3) {
-  font-size: 32px;
+  font-size: 18px;
   border-top: 2px solid #fb0202;
   border-bottom: 2px solid #fb0202;
 }
 
 .launch-date p:nth-child(2) {
-  font-size: 52px;
+  font-size: 28px;
 }
 
 .dotted {
@@ -333,6 +335,22 @@ footer .socials {
 
   .btn-desktop {
     display: block;
+  }
+
+  .banner-launch {
+    width: auto;
+    justify-content: space-between;
+    flex-direction: initial;
+    margin-bottom: 16px;
+    text-align: initial;
+  }
+
+  .banner-launch p {
+    font-size: 20px;
+  }
+
+  .banner-date .title {
+    font-size: 26px;
   }
 
   main section {
@@ -439,9 +457,17 @@ footer .socials {
     padding: 20px;
   }
 
-  footer .socials {
-    padding: 24px 0px;
-    justify-content: space-around;
+  .launch-editor h2 {
+    font-size: 32px;
+  }
+
+  .launch-date p:nth-child(1),
+  .launch-date p:nth-child(3) {
+    font-size: 32px;
+  }
+
+  .launch-date p:nth-child(2) {
+    font-size: 52px;
   }
 
   footer .socials a {
