@@ -107,10 +107,12 @@ main .description-cover {
 
 main .paragraph-title {
   margin-bottom: 0;
+  font-size: 22px;
 }
 
 main .book-paragraph {
   margin-top: 8px;
+  font-size: 18px;
 }
 
 main .book {
@@ -119,6 +121,10 @@ main .book {
 
 main .book .mobile-hide {
   display: none;
+}
+
+main .author-paragraph {
+  font-size: 18px;
 }
 
 main .author-image {
@@ -384,10 +390,6 @@ footer .socials {
     display: block;
     width: 320px;
     height: 500px;
-  }
-
-  main .paragraph-title {
-    margin-bottom: 0;
   }
 
   main .book-paragraph {
