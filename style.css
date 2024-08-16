@@ -273,8 +273,35 @@ main .infos {
   margin-top: 8px;
 }
 
+.editor {
+  display: flex;
+  flex-direction: column;
+}
+
+.editor-help a {
+  cursor: pointer;
+}
+
+.editor-help {
+  display: flex;
+  align-items: center;
+  gap: 12px 32px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
 .logo {
   width: 50px;
+}
+
+.telanon-link {
+  background-color: red;
+}
+
+.editor-help .telanon {
+  background-color: red;
 }
 
 footer {
@@ -470,6 +497,28 @@ footer .socials {
 
   .launch-date p:nth-child(2) {
     font-size: 52px;
+  }
+
+  .editor {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .editor-help {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    gap: 28px;
+  }
+
+  .editor-help img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .editor-help .telanon {
+    width: 110%;
+    height: 100%;
   }
 
   footer .socials a {
