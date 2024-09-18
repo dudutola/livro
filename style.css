@@ -560,3 +560,34 @@ main:target {
   height: 100%;
   object-fit: cover;
 }
+
+
+
+/* dialog modal */
+
+dialog {
+  width: 80%;
+  border: none;
+  padding: 0;
+}
+
+.close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+figcaption {
+  padding: 0 12px 8px;
+}
