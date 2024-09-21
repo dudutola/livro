@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "src": "./images/assets/eventa.jpeg",
+    "alt": "eventa",
+    "figcaption": "description a"
+  },
+  {
+    "id": 2,
+    "src": "./images/assets/eventb.jpeg",
+    "alt": "eventb",
+    "figcaption": "description b"
+  },
+  {
+    "id": 3,
+    "src": "./images/assets/eventc.jpeg",
+    "alt": "eventc",
+    "figcaption": "description c"
+  },
+  {
+    "id": 4,
+    "src": "./images/assets/eventd.jpeg",
+    "alt": "eventd",
+    "figcaption": "description d"
+  }
+]

@@ -561,6 +561,9 @@ main:target {
   object-fit: cover;
 }
 
+.grid-item p {
+  display: none;
+}
 
 
 /* dialog modal */
@@ -587,6 +590,19 @@ figure img {
   height: auto;
 }
 
+/* .arrow {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  left: 10px;
+} */
 
 figcaption {
   padding: 0 12px 8px;

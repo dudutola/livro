@@ -1,24 +1,73 @@
+const galleryGrid = document.querySelector(".gallery-grid");
 const dialog = document.querySelector("dialog");
-const itemList = Array.from(document.querySelectorAll(".grid-item img"));
-const closeButton = document.querySelector("dialog .close");
+let index = 0;
 
-// Le bouton "Afficher la fenêtre" ouvre le dialogue
-// nodelist
+fetch('gallery.json')
+  .then(response => response.json())
+  .then(dataGallery => {
 
-itemList.forEach(gridItem => {
-  gridItem.addEventListener("click", () => {
+    dataGallery.forEach(item => {
 
-    // ici on cherche a récuperer la figure
-    // on peut aussi recuperer un element directement en faisant son nom puis querySelector au lieu de rajouter document
-    const figure = dialog.querySelector("figure")
-    // ensuite on rajoute directement a l'intérieur en faisant innerHTML, puis on met directement l'HTML, et une interpolation pour la src, gridItem = image a l'interieur de grid-item, donc chaque image sa propre source
-    figure.innerHTML = `<img src="${gridItem.src}" alt="">`
+      const gridItemElement = document.createElement("div");
+      gridItemElement.className = "grid-item";
 
-    dialog.showModal();
-  });
-});
+      const imageElement = document.createElement("img");
+      imageElement.id = `event-${item.id}`;
+      imageElement.src = item.src;
+      imageElement.alt = item.alt;
 
-// Le bouton "Fermer" ferme le dialogue
-closeButton.addEventListener("click", () => {
-  dialog.close();
-});
+      imageElement.addEventListener("click", () => {
+        const dataItem = dataGallery.find(item => {
+          return `event-${item.id}` === imageElement.id;
+        })
+
+        const figure = dialog.querySelector("figure");
+
+        const imgFigure = document.createElement("img");
+        imgFigure.src = dataItem.src;
+
+        const iconLeftElement = document.createElement("button");
+        iconLeftElement.innerText = "<";
+        iconLeftElement.className = "arrow left-arrow";
+
+        const iconRightElement = document.createElement("button");
+        iconRightElement.innerText = ">";
+        iconRightElement.className = "arrow right-arrow";
+
+        figure.appendChild(imgFigure);
+
+        const figcaption = dialog.querySelector("figcaption");
+        figcaption.innerText = dataItem.figcaption;
+
+        dialog.appendChild(iconLeftElement);
+        dialog.appendChild(iconRightElement);
+
+        const changeImageDirection = (direction) => {
+          if (direction === "left") {
+            index = (index > 0) ? index - 1 : dataGallery.length - 1;
+          } else if (direction === "right") {
+            index = (index < dataGallery.length - 1) ? index + 1 : 0;
+          }
+
+          const previousDataItem = dataGallery[index];
+          imgFigure.src = previousDataItem.src;
+          figcaption.innerText = previousDataItem.figcaption;
+        }
+
+        iconLeftElement.addEventListener("click", () => changeImageDirection("left"));
+        iconRightElement.addEventListener("click", () => changeImageDirection("right"));
+
+        dialog.showModal();
+      });
+
+      gridItemElement.appendChild(imageElement);
+      galleryGrid.appendChild(gridItemElement);
+
+      const closeButton = document.querySelector("dialog .close");
+
+      closeButton.addEventListener("click", () => {
+        dialog.close();
+      });
+    });
+  })
+  .catch(error => console.error('Error loading gallery:', error));
