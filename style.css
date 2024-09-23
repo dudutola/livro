@@ -574,14 +574,10 @@ footer .socials {
 }
 
 .grid-item img {
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
-/* .grid-item p {
-  display: none;
-} */
 
 
 /* dialog modal */
@@ -648,6 +644,9 @@ figcaption {
 
 
 @media (min-width: 768px) {
+  .grid-item img {
+    height: 100%;
+  }
 
   /* dialog modal */
 
