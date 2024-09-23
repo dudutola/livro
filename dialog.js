@@ -16,31 +16,34 @@ fetch('gallery.json')
       imageElement.src = item.src;
       imageElement.alt = item.alt;
 
+      // temporary for alt and figcaption change
+      // const tempFigCaptionElement = document.createElement("p");
+      // tempFigCaptionElement.innerText = `figcaption: ${item.figcaption}`;
+      // gridItemElement.appendChild(tempFigCaptionElement);
+
+      // const tempAltElement = document.createElement("p");
+      // tempAltElement.innerText = `alt: ${item.alt}`;
+      // gridItemElement.appendChild(tempAltElement);
+
       imageElement.addEventListener("click", () => {
         const dataItem = dataGallery.find(item => {
           return `event-${item.id}` === imageElement.id;
         })
 
         const figure = dialog.querySelector("figure");
+        figure.innerHTML = '';
 
         const imgFigure = document.createElement("img");
         imgFigure.src = dataItem.src;
-
-        const iconLeftElement = document.createElement("button");
-        iconLeftElement.innerText = "<";
-        iconLeftElement.className = "arrow left-arrow";
-
-        const iconRightElement = document.createElement("button");
-        iconRightElement.innerText = ">";
-        iconRightElement.className = "arrow right-arrow";
-
         figure.appendChild(imgFigure);
 
-        const figcaption = dialog.querySelector("figcaption");
-        figcaption.innerText = dataItem.figcaption;
+        // en gros nexiste pe pas, donc faut verifier avant?
+        // const figcaption = document.createElement("figcaption");
+        // figcaption.innerText = dataItem.figcaption;
+        // figure.appendChild(figcaption);
 
-        dialog.appendChild(iconLeftElement);
-        dialog.appendChild(iconRightElement);
+        const iconLeftElement = document.getElementById("left-arrow");
+        const iconRightElement = document.getElementById("right-arrow");
 
         const changeImageDirection = (direction) => {
           if (direction === "left") {
@@ -49,9 +52,9 @@ fetch('gallery.json')
             index = (index < dataGallery.length - 1) ? index + 1 : 0;
           }
 
-          const previousDataItem = dataGallery[index];
-          imgFigure.src = previousDataItem.src;
-          figcaption.innerText = previousDataItem.figcaption;
+          const newDataItem = dataGallery[index];
+          imgFigure.src = newDataItem.src;
+          // figcaption.innerText = newDataItem.figcaption;
         }
 
         iconLeftElement.addEventListener("click", () => changeImageDirection("left"));

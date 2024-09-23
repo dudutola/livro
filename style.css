@@ -97,6 +97,19 @@ main {
   background-color: #e6efe6;
 }
 
+/* main {
+  display: none;
+}
+
+main:target {
+  display: block;
+}
+
+main#homepage {
+  display: block;
+} */
+
+
 main h2 {
   font-weight: 100;
 }
@@ -561,9 +574,9 @@ main:target {
   object-fit: cover;
 }
 
-.grid-item p {
+/* .grid-item p {
   display: none;
-}
+} */
 
 
 /* dialog modal */
@@ -574,13 +587,22 @@ dialog {
   padding: 0;
 }
 
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
+
 .close {
   position: absolute;
-  right: 8px;
-  top: 8px;
+  right: 10px;
+  top: 10px;
+  font-size: large;
+  border-radius: 50%;
+  border: none;
+  background-color: white;
 }
 
 figure {
+  display: block;
   padding: 0;
   margin: 0;
 }
@@ -590,20 +612,100 @@ figure img {
   height: auto;
 }
 
-/* .arrow {
+.icons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   position: absolute;
   z-index: 10;
   top: 50%;
+  color: white;
+  font-size: 20px;
+  color: white;
+  font-size: 20px;
 }
 
-.left-arrow {
+#left-arrow {
+  transform: translateY(-50%);
+  position: absolute;
   left: 10px;
 }
 
-.right-arrow {
-  left: 10px;
-} */
+#right-arrow {
+  transform: translateY(-50%);
+  position: absolute;
+  right: 10px;
+}
 
 figcaption {
   padding: 0 12px 8px;
+}
+
+
+@media (min-width: 768px) {
+
+  /* dialog modal */
+
+  dialog[open] {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .dialog-content {
+    display: flex;
+  }
+
+  .close {
+    width: 50px;
+    height: 50px;
+    font-size: 36px;
+    color: white;
+    background-color: black;
+    right: 32px;
+    top: 32px;
+  }
+
+  .close:hover {
+    color: black;
+    background-color: rgb(202, 197, 197);
+  }
+
+  figure {
+    display: flex;
+    margin: -20px;
+  }
+
+  figure img {
+    max-width: 100%;
+    height: 100vh;
+  }
+
+  .icons {
+    left: 0;
+    color: black;
+    font-size: 40px;
+  }
+
+  #left-arrow {
+    left: 24px;
+  }
+
+  #right-arrow {
+    right: 24px;
+  }
+
+  #left-arrow:hover,
+  #right-arrow:hover {
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    padding: 12px;
+    transform: translateY(-50%);
+    font-size: 32px;
+  }
 }
