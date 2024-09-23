@@ -596,10 +596,13 @@ dialog::backdrop {
   position: absolute;
   right: 10px;
   top: 10px;
-  font-size: large;
+  /* font-size: large; */
+  font-size: 20px;
   border-radius: 50%;
   border: none;
-  background-color: white;
+  background-color: #2828283d;
+  cursor: pointer;
+  padding: 2px 8px;
 }
 
 figure {
@@ -621,20 +624,23 @@ figure img {
   z-index: 10;
   top: 50%;
   color: white;
-  font-size: 20px;
-  color: white;
-  font-size: 20px;
+  /* font-size: 32px; */
+  cursor: pointer;
+}
+
+#left-arrow,
+#right-arrow {
+  position: absolute;
+  padding: 8px 10px;
+  background-color: #d0d0d0;
+  border-radius: 50%;
 }
 
 #left-arrow {
-  transform: translateY(-50%);
-  position: absolute;
   left: 10px;
 }
 
 #right-arrow {
-  transform: translateY(-50%);
-  position: absolute;
   right: 10px;
 }
 
@@ -644,9 +650,6 @@ figcaption {
 
 
 @media (min-width: 768px) {
-  .grid-item img {
-    height: 100%;
-  }
 
   /* dialog modal */
 
@@ -695,21 +698,20 @@ figcaption {
     font-size: 40px;
   }
 
+  #left-arrow,
+  #right-arrow {
+    position: absolute;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+  }
+
+
   #left-arrow {
-    left: 24px;
+    left: 56px;
   }
 
   #right-arrow {
-    right: 24px;
-  }
-
-  #left-arrow:hover,
-  #right-arrow:hover {
-    color: white;
-    background-color: black;
-    border-radius: 50%;
-    padding: 12px;
-    transform: translateY(-50%);
-    font-size: 32px;
+    right: 56px;
   }
 }
