@@ -15,6 +15,7 @@ fetch('gallery.json')
       imageElement.id = `event-${item.id}`;
       imageElement.src = item.src;
       imageElement.alt = item.alt;
+      imageElement.setAttribute("loading", "lazy");
 
       // temporary for alt and figcaption change
       // const tempFigCaptionElement = document.createElement("p");

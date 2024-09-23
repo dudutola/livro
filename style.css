@@ -9,8 +9,20 @@ header {
 }
 
 header nav {
-  margin-left: 8px;
-  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12px 8px;
+}
+
+header nav a {
+  font-weight: bold;
+  color: #f33737;
+  font-size: 18px;
+}
+
+header nav a:hover {
+  color: black;
 }
 
 header h1 {
@@ -96,19 +108,6 @@ main {
   padding: 20px 16px;
   background-color: #e6efe6;
 }
-
-/* main {
-  display: none;
-}
-
-main:target {
-  display: block;
-}
-
-main#homepage {
-  display: block;
-} */
-
 
 main h2 {
   font-weight: 100;
@@ -341,7 +340,11 @@ footer .socials {
   }
 
   header nav {
-    margin-left: 0px;
+    margin: 12px 0px;
+  }
+
+  header nav a {
+    font-size: 20px;
   }
 
   header h1 {
@@ -547,13 +550,14 @@ footer .socials {
 
 /* Event side */
 
-main {
-  display: none;
+#launch h2{
+  font-size: 22px;
 }
 
-main:target {
-  display: block;
+#launch p {
+  font-size: 18px;
 }
+
 
 .gallery-grid {
   display: grid;
@@ -566,6 +570,7 @@ main:target {
   border-radius: 8px;
   text-align: center;
   overflow: hidden;
+  border: none;
 }
 
 .grid-item img {
