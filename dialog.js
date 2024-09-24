@@ -61,6 +61,14 @@ fetch('gallery.json')
         iconLeftElement.addEventListener("click", () => changeImageDirection("left"));
         iconRightElement.addEventListener("click", () => changeImageDirection("right"));
 
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "ArrowLeft") {
+            changeImageDirection("left");
+          } else if (e.key === "ArrowRight") {
+            changeImageDirection("right");
+          }
+        });
+
         dialog.showModal();
       });
 
@@ -75,7 +83,7 @@ fetch('gallery.json')
 
       window.addEventListener("click", (e) => {
         if (e.target === dialog) {
-          dialog.close();
+          closeDialog();
         }
       });
     });
