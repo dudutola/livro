@@ -75,16 +75,19 @@ fetch('gallery.json')
       gridItemElement.appendChild(imageElement);
       galleryGrid.appendChild(gridItemElement);
 
-      const closeButton = document.querySelector("dialog .close");
+      window.addEventListener("DOMContentLoaded", () => {
 
-      const closeDialog = () => dialog.close();
+        const closeButton = document.querySelector("dialog .close");
 
-      closeButton.addEventListener("click", closeDialog);
+        const closeDialog = () => dialog.close();
 
-      window.addEventListener("click", (e) => {
-        if (e.target === dialog) {
-          closeDialog();
-        }
+        closeButton.addEventListener("click", closeDialog);
+
+        window.addEventListener("click", (e) => {
+          if (e.target === dialog) {
+            closeDialog();
+          }
+        });
       });
     });
   })
