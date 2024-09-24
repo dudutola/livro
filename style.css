@@ -4,6 +4,11 @@ body {
   margin: auto;
 }
 
+button:focus,
+a:focus {
+  outline: none;
+}
+
 header {
   margin-top: 20px;
 }
@@ -586,6 +591,7 @@ dialog {
   width: 80%;
   border: none;
   padding: 0;
+  border-radius: 4px;
 }
 
 dialog::backdrop {
@@ -603,6 +609,7 @@ dialog::backdrop {
   background-color: #2828283d;
   cursor: pointer;
   padding: 2px 8px;
+  color: black;
 }
 
 figure {
@@ -632,6 +639,7 @@ figure img {
 #right-arrow {
   position: absolute;
   padding: 8px 10px;
+  padding: 10px 12px;
   background-color: #d0d0d0;
   border-radius: 50%;
 }
@@ -661,6 +669,8 @@ figcaption {
     padding: 20px;
     height: 100vh;
     overflow: hidden;
+    background-color: #e5e5e5e6;
+    border-radius: 0;
   }
 
   .dialog-content {
@@ -701,7 +711,7 @@ figcaption {
   #left-arrow,
   #right-arrow {
     position: absolute;
-    padding: 0;
+    padding: 28px;
     background-color: transparent;
     border-radius: 0;
   }
