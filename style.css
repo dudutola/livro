@@ -17,7 +17,7 @@ header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 12px 8px;
+  margin: 12px 20px;
 }
 
 header nav a {
@@ -349,7 +349,7 @@ footer .socials {
   }
 
   header nav a {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   header h1 {
@@ -542,6 +542,10 @@ footer .socials {
     height: 100%;
   }
 
+  footer .socials {
+    padding: 24px 60px;
+  }
+
   footer .socials a {
     font-size: 20px;
   }
@@ -555,14 +559,18 @@ footer .socials {
 
 /* Event side */
 
-#launch h2{
+#launch h2 {
   font-size: 22px;
+}
+
+#launch-content {
+  text-align: start;
+  width: 100%;
 }
 
 #launch p {
   font-size: 18px;
 }
-
 
 .gallery-grid {
   display: grid;
@@ -627,6 +635,7 @@ figure img {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: absolute;
   z-index: 10;
   top: 50%;
@@ -658,6 +667,25 @@ figcaption {
 
 
 @media (min-width: 768px) {
+
+  #launch {
+    margin: 40px 0;
+  }
+
+  #launch h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 44px;
+  }
+
+  #launch-content {
+    text-align: justify;
+    width: 94%;
+  }
+
+  #launch p {
+    font-size: 18px;
+  }
 
   /* dialog modal */
 
@@ -715,7 +743,6 @@ figcaption {
     background-color: transparent;
     border-radius: 0;
   }
-
 
   #left-arrow {
     left: 56px;

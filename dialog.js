@@ -81,7 +81,7 @@ fetch('gallery.json')
 
       closeButton.addEventListener("click", closeDialog);
 
-      window.addEventListener("click", (e) => {
+      document.querySelector('body').addEventListener("click", (e) => {
         if (e.target === dialog) {
           closeDialog();
         }
