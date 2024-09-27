@@ -827,11 +827,12 @@ footer .socials {
 }
 
 .grid-item {
-  border: 1px solid;
   border-radius: 8px;
   text-align: center;
   overflow: hidden;
   border: none;
+  cursor: pointer;
+  height: 230px;
 }
 
 .grid-item img {
@@ -848,7 +849,6 @@ dialog {
   border: none;
   padding: 0;
   border-radius: 4px;
-  background-color: transparent;
 }
 
 dialog::backdrop {
@@ -870,7 +870,6 @@ dialog::backdrop {
 }
 
 figure {
-  display: block;
   padding: 0;
   margin: 0;
 }
@@ -878,6 +877,7 @@ figure {
 figure img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 .icons {
@@ -963,6 +963,10 @@ figcaption {
 
   main #evento-fotos {
     margin: 70px 0;
+  }
+
+  .grid-item {
+    height: 600px;
   }
 
   /* dialog modal */
@@ -1070,6 +1074,10 @@ figcaption {
 
   main #evento-fotos {
     margin: 40px 0;
+  }
+
+  .grid-item {
+    height: 300px;
   }
 
   /* dialog modal */

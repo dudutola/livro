@@ -1,6 +1,12 @@
 [
   {
     "id": 1,
+    "src": "./images/assets/eventaaa.jpeg",
+    "alt": "Autor acompanhado da sua família.",
+    "figcaption": "eventaabm"
+  },
+  {
+    "id": 2,
     "src": "./images/assets/eventaaaa.jpeg",
     "alt": "Autor Dias Cardoso entrevistado pela RTP.",
     "figcaption": "Dias Cardoso autor de 'ELLYZÉ, Autópsia da Alma', fala sobre o seu projeto em uma entrevista para a RTP."
@@ -53,6 +59,36 @@
   },    {
     "id": 39,
     "src": "./images/assets/eventaabm.jpeg",
+    "alt": "Autor acompanhado da sua família.",
+    "figcaption": "eventaabm"
+  }, {
+    "id": 41,
+    "src": "./images/assets/eventaabp.jpeg",
+    "alt": "Autor acompanhado da sua família.",
+    "figcaption": "eventaabm"
+  }, {
+    "id": 42,
+    "src": "./images/assets/eventaabq.jpeg",
+    "alt": "Autor acompanhado da sua família.",
+    "figcaption": "eventaabm"
+  }, {
+    "id": 43,
+    "src": "./images/assets/eventaabr.jpeg",
+    "alt": "Autor acompanhado da sua família.",
+    "figcaption": "eventaabm"
+  }, {
+    "id": 44,
+    "src": "./images/assets/eventaabs.jpeg",
+    "alt": "Autor acompanhado da sua família.",
+    "figcaption": "eventaabm"
+  }, {
+    "id": 45,
+    "src": "./images/assets/WhatsApp Image 2024-09-27 at 1.30.12 PM.jpeg",
+    "alt": "Autor acompanhado da sua família.",
+    "figcaption": "eventaabm"
+  }, {
+    "id": 46,
+    "src": "./images/assets/WhatsApp Image 2024-09-27 at 1.16.58 PM.jpeg",
     "alt": "Autor acompanhado da sua família.",
     "figcaption": "eventaabm"
   }
