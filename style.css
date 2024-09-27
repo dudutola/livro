@@ -795,6 +795,18 @@ footer .socials {
   font-size: 18px;
 }
 
+#singer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#singer-infos {
+  text-align: justify;
+  width: 80%;
+}
+
 #nos-por-la-link:visited {
   color: darkblue;
 }
