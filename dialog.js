@@ -39,9 +39,9 @@ fetch('gallery.json')
         figure.appendChild(imgFigure);
 
         // en gros nexiste pe pas, donc faut verifier avant?
-        // const figcaption = document.createElement("figcaption");
-        // figcaption.innerText = dataItem.figcaption;
-        // figure.appendChild(figcaption);
+        const figcaption = document.createElement("figcaption");
+        figcaption.innerText = dataItem.figcaption;
+        figure.appendChild(figcaption);
 
         const iconLeftElement = document.getElementById("left-arrow");
         const iconRightElement = document.getElementById("right-arrow");
@@ -55,7 +55,7 @@ fetch('gallery.json')
 
           const newDataItem = dataGallery[index];
           imgFigure.src = newDataItem.src;
-          // figcaption.innerText = newDataItem.figcaption;
+          figcaption.innerText = newDataItem.figcaption;
         }
 
         iconLeftElement.addEventListener("click", () => changeImageDirection("left"));
