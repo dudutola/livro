@@ -562,17 +562,9 @@ footer .socials {
     width: 724px;
   }
 
-  /* header {
-    margin-top: 20px;
-  } */
-
   header nav {
     margin: 0;
   }
-
-  /* header nav a {
-    font-size: 24px;
-  } */
 
   header h1 {
     font-size: 70px;
@@ -613,8 +605,6 @@ footer .socials {
     display: block;
   }
 
-  /* stopped here */
-
   .banner-launch {
     width: auto;
     justify-content: space-between;
@@ -632,7 +622,7 @@ footer .socials {
   }
 
   main section {
-    margin: 60px 0;
+    margin: 50px 0;
   }
 
   main h2 {
@@ -660,8 +650,8 @@ footer .socials {
 
   main .description-cover {
     display: block;
-    width: 320px;
-    height: 500px;
+    width: 308px;
+    height: 488px;
   }
 
   main .book-paragraph {
@@ -690,7 +680,7 @@ footer .socials {
     border-radius: 15px;
     width: 26%;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
-    padding: 36px;
+    padding: 28px;
     background-color: #f2f2f2;
   }
 
@@ -710,7 +700,7 @@ footer .socials {
   }
 
   main .card-price {
-    font-size: 70px;
+    font-size: 68px;
     font-weight: bold;
     margin-bottom: 16px;
   }
