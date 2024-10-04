@@ -38,6 +38,7 @@ header .book-cover {
   display: block;
   margin: auto;
   width: 200px;
+  object-fit: cover;
 }
 
 header .banner {
