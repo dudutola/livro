@@ -484,6 +484,7 @@ footer .socials {
   main .card-title {
     font-size: 24px;
     color: #86bfed;
+    font-weight: bold;
   }
 
   main .card-price {
@@ -806,7 +807,6 @@ video {
 }
 
 #singer-infos {
-  text-align: justify;
   width: 80%;
 }
 
@@ -892,7 +892,6 @@ dialog::backdrop {
   position: absolute;
   right: 10px;
   top: 10px;
-  /* font-size: large; */
   font-size: 20px;
   border-radius: 50%;
   border: none;
@@ -927,7 +926,6 @@ figcaption {
   z-index: 10;
   top: 50%;
   color: white;
-  /* font-size: 32px; */
   cursor: pointer;
 }
 
@@ -962,7 +960,6 @@ figcaption {
   }
 
   #launch-content {
-    text-align: justify;
     width: 94%;
     margin: auto;
     padding-bottom: 28px;
