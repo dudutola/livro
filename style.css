@@ -1091,8 +1091,11 @@ figcaption {
 
 /* tablet */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+/* @media only screen
+   and (min-device-width : 768px)
+   and (max-device-width : 1080px) { */
 
+@media (min-width: 768px) and (max-width: 1024px) {
   #launch {
     margin: 0;
   }
@@ -1211,7 +1214,90 @@ figcaption {
 }
 
 /* landscape tablet */
-@media only screen
+/* @media only screen
+   and (min-device-width : 768px)
+   and (max-device-width : 1024px)
+   and (orientation : landscape) {
+   dialog[open] {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    height: auto;
+    overflow: hidden;
+    background-color: #e5e5e5e6;
+    border-radius: 0;
+  }
+
+  .dialog-content {
+    display: flex;
+  }
+
+  .close {
+    width: 36px;
+    height: 36px;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    right: 28px;
+    top: 32px;
+  }
+
+  .close:hover {
+    color: black;
+    background-color: rgb(202, 197, 197);
+  }
+
+  figure {
+    width: 100%;
+    display: flex;
+    margin: -20px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+
+  figure img {
+    max-width: 100%;
+    height: 100vh;
+    padding-left: 0;
+  }
+
+  figcaption {
+    padding: 0;
+    width: 36%;
+    font-size: 18px;
+  }
+
+  .icons {
+    left: 0;
+    color: black;
+    font-size: 40px;
+  }
+
+  #left-arrow,
+  #right-arrow {
+    position: absolute;
+    padding: 28px;
+    background-color: transparent;
+    border-radius: 0;
+  }
+
+  #left-arrow {
+    left: 12px;
+  }
+
+  #right-arrow {
+    right: 12px;
+  }
+} */
+
+
+
+
+
+/* @media only screen
   and (min-device-width: 1366px)
   and (max-device-width: 1366px)
   and (orientation: landscape)
@@ -1289,13 +1375,13 @@ figcaption {
     #right-arrow {
       right: 12px;
     }
-}
+} */
 
-/* @media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: landscape) { */
+@media screen and (min-device-width : 768px) and (max-device-width : 1080px)  and (orientation: landscape) {
 
   /* dialog modal */
 
-  /* dialog[open] {
+  dialog[open] {
     width: 100%;
     margin: 0;
     display: flex;
@@ -1367,5 +1453,5 @@ figcaption {
 
   #right-arrow {
     right: 12px;
-  } */
-/* } */
+  }
+}
