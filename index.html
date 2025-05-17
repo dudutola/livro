@@ -9,7 +9,46 @@
   <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin>
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/37200efcc3.js" crossorigin="anonymous" defer></script>
+  <script src="modal.js" defer></script>
 </head>
+<div id="welcome-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" id="close-modal">&times;</span>
+    <h1 class="modal_title">SEMANA <span class="title_span">DE</span> ÁFRICA</h1>
+    <section class="book_presentation">
+      <p class="color_dark_brown">Danilo Salvaterra</p>
+      <img src="./images/assets/Ellyzé_Autópsia da Alma - Capa (Final).png" alt="Capa de 'Ellyzé' - Autópsia da Alma">
+      <p class="color_dark_brown">Cláudia Costa</p>
+    </section>
+
+    <section class="content">
+      <p class="color_dark_brown">Apresentação do livro "Ellyzé" - Autópsia da Alma</p>
+      <p class="date">Sexta-feira - 30 de maio - 18h00</p>
+      <p class="place dark_gray">FNAC Vasco da Gama</p>
+    </section>
+
+    <div class="line"></div>
+
+    <section class="sponsor">
+      <div class="sponsors_names">
+        <p class="color_dark_brown">Editora Pena Real</p>
+        <p class="dark_gray"><em>Dinalivro: Paula Amaro</em></p>
+        <p class="medium_light_gray">Imagem: Anastácia Rodrigues</p>
+      </div>
+
+      <div class="support">
+        <p class="color_dark_brown">Support</p>
+        <div class="support_container">
+          <div class="dark_gray round">FNAC</div>
+          <div class="dark_gray round">RDP África</div>
+          <div class="dark_gray round">Téla Nón</div>
+        </div>
+      </div>
+    </section>
+
+    <p>Obrigado por visitar o site. Aproveite a leitura!</p>
+  </div>
+</div>
 <body>
   <header>
     <nav>
@@ -28,6 +67,19 @@
       <a href="https://buy.stripe.com/14kbJ90xG5s9dQQfZ5" class="btn-mobile" target="_blank">
         <button class="btn">Comprar</button>
       </a>
+    </div>
+
+    <div class="banner-launch">
+      <div class="banner-date">
+        <p class="title">A Voz por Trás do Livro</p>
+        <p class="date">Sexta-feira, 30 de Maio 2025 <br>às 18h00</p>
+      </div>
+      <div class="banner-infos">
+        <!-- <p><strong>Local:</strong> Auditório da Biblioteca Orlando Ribeiro - Lumiar <br>Estrada de Telheiras 146, 1600-772 Lisboa</p> -->
+        <p><strong>Local:</strong> FNAC Vasco da Gama <br>Centro Vasco da Gama, 1990-094 Lisboa</p>
+        <p><strong>Apresentação:</strong> Danilo Salvaterra, Cláudia Costa</p>
+        <button id="open-modal" class="ver-mais-btn">Ver mais</button>
+      </div>
     </div>
   </header>
   <main>

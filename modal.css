@@ -1,0 +1,114 @@
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.6);
+  justify-content: center; align-items: center;
+}
+.modal-content {
+  background: #F5EEE8;
+  /* margin: 10% auto; */
+  margin: 5% auto;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  /* max-width: 400px; */
+  max-width: 430px;
+  text-align: center;
+  position: relative;
+}
+.close-btn {
+  position: absolute;
+  right: 1rem; top: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* CONTENT */
+.modal_title {
+  color: #914D21;
+}
+.title_span {
+  border-bottom: 2px solid #914D21;
+}
+
+.book_presentation {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+
+  img {
+    width: 150px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+.color_dark_brown {
+  /* color: #4D4036; */
+  color: #4D4036DB;
+  font-weight: bold;
+}
+
+.content {
+  margin-bottom: 24px;
+
+  .date {
+    color: #C86E28;
+  }
+}
+.dark_gray {
+  color: #4A4A4A;
+}
+
+.line {
+  border-bottom: 1px solid #C78A64;
+  width: 84%;
+  margin: auto;
+}
+
+.sponsor {
+  margin-top: 18px;
+
+  .sponsors_names {
+    font-size: 14px;
+  }
+}
+.medium_light_gray {
+  color: #888888;
+}
+
+.support {
+  margin: 24px 0;
+}
+.support_container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+
+  .round {
+    background-color: #E3E1E4;
+    font-size: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+  }
+}
+
+#open-modal {
+  background-color: white;
+  border: 1px solid #00000042;
+  border-radius: 4px;
+  color: black;
+  padding: 6px 8px 4px;
+  cursor: pointer;
+}
+#open-modal:hover {
+  background-color: black;
+  color: white;
+}
