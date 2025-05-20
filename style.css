@@ -59,14 +59,20 @@ header .banner-title {
   font-size: 18px;
   font-weight: bold;
   border-radius: 8px;
+  cursor: pointer;
+  color: #003366;
 }
 
 .btn:hover {
   color: #ffffff;
+  /* background-color: #91c4ed; */
+  background-color: #63a5da;
+
 }
 
 .btn-desktop {
   display: none;
+  cursor: default;
 }
 
 .btn-mobile {
@@ -75,6 +81,7 @@ header .banner-title {
   justify-content: center;
   margin-top: 28px;
   text-decoration: none;
+  cursor: default;
 }
 
 .banner-launch {
@@ -91,6 +98,22 @@ header .banner-title {
 
 .banner-launch p {
   font-size: 18px;
+}
+
+.availability {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #046;
+  font-style: italic;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-left: 4px solid #b30000;
+}
+.availability-mobile {
+  display: block;
+}
+.availability-desktop {
+  display: none;
 }
 
 .banner-date {
@@ -165,7 +188,7 @@ main .price {
 main .card {
   border: 1px solid #f2f2f2;
   border-radius: 15px;
-  width: 110px;
+  width: 144px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
   padding: 24px;
   background-color: #f2f2f2;
@@ -402,6 +425,13 @@ footer .socials {
     text-align: initial;
   }
 
+  .availability-desktop {
+    display: block;
+  }
+  .availability-mobile {
+    display: none;
+  }
+
   .banner-launch p {
     font-size: 20px;
   }
@@ -615,6 +645,12 @@ footer .socials {
     flex-direction: initial;
     margin-bottom: 16px;
     text-align: initial;
+  }
+   .availability-desktop {
+    display: block;
+  }
+  .availability-mobile {
+    display: none;
   }
 
   .banner-launch p {
