@@ -2,22 +2,28 @@
   display: block;
   position: fixed;
   z-index: 9999;
-  left: 0; top: 0;
-  width: 100vw; height: 100vh;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
   background: rgba(0,0,0,0.6);
-  justify-content: center; align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 .modal-content {
   background: #F5EEE8;
   /* margin: 10% auto; */
-  margin: 5% auto;
+  margin: 1% auto;
   padding: 2rem;
   border-radius: 8px;
   width: 90%;
   /* max-width: 400px; */
-  max-width: 430px;
+  max-width: 580px;
   text-align: center;
   position: relative;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Cpath d='M150,10 C200,50 250,100 290,150 C250,200 200,250 150,290 C100,250 50,200 10,150 C50,100 100,50 150,10 Z' fill='none' stroke='%23a67c52' stroke-width='1' opacity='0.2'/%3E%3Cpath d='M150,30 C190,60 230,100 270,150 C230,200 190,240 150,270 C110,240 70,200 30,150 C70,100 110,60 150,30 Z' fill='none' stroke='%23a67c52' stroke-width='1' opacity='0.2'/%3E%3Cpath d='M150,50 C180,70 210,100 250,150 C210,200 180,230 150,250 C120,230 90,200 50,150 C90,100 120,70 150,50 Z' fill='none' stroke='%23a67c52' stroke-width='1' opacity='0.2'/%3E%3C/svg%3E");
+  background: linear-gradient(to bottom, #e7cae5, #af8f8f);
 }
 .close-btn {
   position: absolute;
@@ -32,19 +38,28 @@
 }
 .title_span {
   border-bottom: 2px solid #914D21;
+  padding-bottom: 4px;
 }
 
 .book_presentation {
   display: flex;
   align-items: center;
-  margin-bottom: 32px;
+  justify-content: space-around;
+  margin-bottom: 14px;
+  text-align: center;
 
   img {
-    width: 150px;
-    border-radius: 4px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    width: 188px;
   }
 }
+.presenter-name {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.presenter-title {
+  color: #8B4513;
+}
+
 .color_dark_brown {
   /* color: #4D4036; */
   color: #4D4036DB;
@@ -54,8 +69,34 @@
 .content {
   margin-bottom: 24px;
 
+  .presenter {
+    padding: 20px;
+  }
+
   .date {
     color: #C86E28;
+    font-size: 20px;
+  }
+
+  .convite {
+    font-size: 24px;
+  }
+
+  .book_name {
+    font-size: 28px;
+    color: #8B4513;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  .book_name span   {
+    color: #4D4036DB;
+  }
+
+  .place {
+    font-weight: bold;
+  }
+  .place span {
+    font-size: 20px;
   }
 }
 .dark_gray {
@@ -88,7 +129,6 @@
   gap: 16px;
 
   .round {
-    background-color: #E3E1E4;
     font-size: 10px;
     width: 50px;
     height: 50px;
@@ -113,9 +153,43 @@
   color: white;
 }
 
+#thanks {
+  font-weight: normal;
+  margin: 0;
+}
 
 @media (max-width: 600px) {
   .modal-content {
     width: 80%;
+  }
+
+  .book_presentation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    text-align: center;
+
+    img {
+      width: 100px;
+    }
+
+    .presenter-name {
+      font-size: 16px;
+    }
+    .presenter-title {
+      font-size: 14px;
+    }
+  }
+
+  .content {
+    .convite {
+      font-size: 20px;
+    }
+
+    .book_name {
+      font-size: 26px;
+      margin-bottom: 0;
+    }
   }
 }
