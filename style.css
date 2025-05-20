@@ -940,6 +940,10 @@ li a {
   padding-top: 12px;
 }
 
+main #evento-fotos {
+  margin-bottom: 24px;
+}
+
 .grid-item {
   border-radius: 8px;
   text-align: center;
