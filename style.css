@@ -34,6 +34,12 @@ header nav a:hover {
 
 header h1 {
   color: red;
+  font-size: 36px;
+  margin-bottom: 0;
+}
+
+header h2 {
+  margin-top: 12px;
 }
 
 header .book-cover {
@@ -124,7 +130,7 @@ header .banner-title {
 
 .banner-date .title {
   font-size: 24px;
-  color: red;
+  color: #b30000;
   font-weight: bold;
   border-bottom: 1px solid;
 }
