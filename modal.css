@@ -247,19 +247,28 @@
    .leaf {
     width: 48vw;
     max-width: 216px;
+    /* opacity: 0.20;
+    z-index: 0; */
+
+    /* position: absolute; */
+    /* width: 80px; */
+    height: auto;
     opacity: 0.20;
     z-index: 0;
+    pointer-events: none;
   }
 
   .leaf-top-left {
     top: 0px;
-    left: -118px;
+    /* left: -118px; */
+    left: -25vw;
     transform: rotate(0deg);
   }
 
   .leaf-bottom-right {
     bottom: 10px;
-    right: -118px;
+    /* right: -118px; */
+    right: -28vw;
     transform: rotate(0deg);
   }
 
@@ -282,11 +291,13 @@
     }
 
     .flower-left {
-      left: 20%;
+      left: 18%;
+      /* left: 20%; */
     }
 
     .flower-right {
-      right: 18%;
+      right: 22%;
+      /* right: 18%; */
     }
 
     .presenter-name {
