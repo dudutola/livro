@@ -90,24 +90,14 @@
   }
 
   .flower-left {
-    /* top: 50%; */
-    /* top: 30%; */
     top: 32%;
-    /* left: 5%; */
-    /* left: 12%; */
     left: 20%;
     transform: translateY(-50%);
   }
 
   .flower-right {
-    /* top: 8%; */
     top: 10%;
-    /* right: 12%; */
     right: 20%;
-    /* transform: translateY(-50%); */
-    /* right: -12%;
-    top: -20px;  */
-    /* transform: scaleX(-1) rotate(10deg); */
     transform: scaleX(-1);
   }
 }
@@ -162,10 +152,8 @@
     left: 50%;
     width: 150px;
     height: 150px;
-    /* background: url('./images/assets/hibiscus_flor.jpg') no-repeat center center; */
     background: url('./images/assets/hibiscus_flower.png') no-repeat center center;
     background-size: contain;
-    /* opacity: 0.1; */
     opacity: 0.2;
     transform: translate(-50%, -50%);
     z-index: -1;
@@ -242,14 +230,14 @@
   margin: 0;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .modal-content {
     width: 80%;
   }
 
   .leaf {
     position: absolute;
-    /* width: 208px; */
+    width: 208px;
     opacity: 0.15;
     opacity: 0.20;
     pointer-events: none;
@@ -316,198 +304,43 @@
       height: 120px;
     }
   }
-}
-
-
-/* .book_name {
-  position: relative;
-  z-index: 1;
-} */
-
-.book_name::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 150px;  /* adjust size */
-  height: 150px;
-  /* background: url('./images/assets/hibiscus_flor.jpg') no-repeat center center; */
-  background: url('./images/assets/hibiscus_flower.png') no-repeat center center;
-  background-size: contain;
-  opacity: 0.1;  /* very subtle */
-  opacity: 0.2;  /* very subtle */
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  pointer-events: none;
-}
-
-
-/* .sponsor {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  position: relative;
 } */
 
 
-/* .book_presentation {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-} */
+@media (max-width: 600px) {
+  .modal-content {
+    width: 90%;
+  }
 
-.flower-left, .flower-right {
-  position: absolute;
-  width: 120px;  /* adjust size */
-  height: 120px;
-  opacity: 0.1;  /* subtle */
-  opacity: 0.2;  /* subtle */
-  pointer-events: none;
-  z-index: 0;    /* behind text */
-  user-select: none;
+  .leaf {
+    width: 40vw;
+    max-width: 120px;
+    opacity: 0.15;
+    z-index: 0;
+  }
+
+  .leaf-top-left {
+    top: 0px;
+    left: -15vw;
+  }
+
+  .leaf-bottom-right {
+    bottom: 10px;
+    right: -15vw;
+  }
+
+  .book_presentation .book_cover img {
+    width: 100px;
+  }
+
+  .flower-left,
+  .flower-right {
+    width: 80px;
+    height: 80px;
+  }
+
+  .book_name::before {
+    width: 90px;
+    height: 90px;
+  }
 }
-
-.flower-left {
-  /* top: 50%; */
-  /* top: 30%; */
-  top: 32%;
-  /* left: 5%; */
-  /* left: 12%; */
-  left: 20%;
-  transform: translateY(-50%);
-}
-
-.flower-right {
-  /* top: 8%; */
-  top: 10%;
-  /* right: 12%; */
-  right: 20%;
-  /* transform: translateY(-50%); */
-  /* right: -12%;
-  top: -20px;  */
-  /* transform: scaleX(-1) rotate(10deg); */
-  transform: scaleX(-1);
-}
-
-/* 1 //// */
-/* .modal-content {
-  position: relative;
-}
-
-.leaf {
-  position: absolute;
-  width: 120px;
-  opacity: 0.15;
-  opacity: 0.20;
-  pointer-events: none;
-  user-select: none;
-  z-index: 0;
-}
-
-.leaf-top-left {
-  top: 10px;
-  left: 10px;
-  transform: rotate(-15deg);
-}
-
-.leaf-bottom-right {
-  bottom: 10px;
-  right: 10px;
-  transform: rotate(20deg);
-} */
-
-/* 22 */
-/* .modal-content {
-  position: relative;
-  overflow: hidden;
-}
-
-.leaf {
-  position: absolute;
-  width: 200px;
-  opacity: 0.15;
-  opacity: 0.20;
-  pointer-events: none;
-  user-select: none;
-  z-index: 0;
-}
-
-.leaf-top-left {
-  top: 0px;
-  left: -100px;
-  transform: rotate(0deg);
-}
-
-.leaf-bottom-right {
-  bottom: 10px;
-  right: 10px;
-  transform: rotate(0deg);
-} */
-
-/* 3 */
-/* .modal-content {
-  position: relative;
-  overflow: hidden;
-}
-
-.leaf {
-  position: absolute;
-  width: 200px;
-  width: 198px;
-  opacity: 0.15;
-  opacity: 0.20;
-  pointer-events: none;
-  user-select: none;
-  z-index: 0;
-}
-
-.leaf-top-left {
-  top: 0px;
-  left: -100px;
-  transform: rotate(0deg);
-}
-
-.leaf-bottom-right {
-  bottom: 10px;
-  right: -90px;
-  transform: rotate(0deg); */
-/* } */
-
-
-/* .modal-content {
-  position: relative;
-  overflow: hidden;
-}
-
-.leaf {
-  position: absolute;
-  width: 198px;
-  opacity: 0.15;
-  opacity: 0.20;
-  pointer-events: none;
-  user-select: none;
-  z-index: 0;
-}
-
-.leaf-top-left {
-  top: 0px;
-  left: -100px;
-  transform: rotate(0deg);
-}
-
-.leaf-bottom-right {
-  bottom: 10px;
-  right: -100px;
-  transform: rotate(0deg);
-} */
-
-
-/* .playwrite-hu-booktitle {
-  font-family: "Playwrite HU", cursive;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-} */
