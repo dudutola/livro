@@ -230,18 +230,24 @@
   margin: 0;
 }
 
-/* @media (max-width: 600px) {
+@media (max-width: 600px) {
   .modal-content {
     width: 80%;
   }
 
-  .leaf {
+  /* .leaf {
     position: absolute;
     width: 208px;
     opacity: 0.15;
     opacity: 0.20;
     pointer-events: none;
     user-select: none;
+    z-index: 0;
+  } */
+   .leaf {
+    width: 48vw;
+    max-width: 216px;
+    opacity: 0.20;
     z-index: 0;
   }
 
@@ -304,10 +310,10 @@
       height: 120px;
     }
   }
-} */
+}
 
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .modal-content {
     width: 90%;
   }
@@ -343,4 +349,4 @@
     width: 90px;
     height: 90px;
   }
-}
+} */
