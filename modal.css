@@ -249,7 +249,7 @@
 
   .leaf {
     position: absolute;
-    width: 208px;
+    /* width: 208px; */
     opacity: 0.15;
     opacity: 0.20;
     pointer-events: none;
