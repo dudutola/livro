@@ -269,6 +269,7 @@
     justify-content: space-between;
     margin-bottom: 14px;
     text-align: center;
+    gap: 0;
 
     .book_cover img {
       width: 100px;
