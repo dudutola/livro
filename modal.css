@@ -30,6 +30,7 @@
   background: linear-gradient(to bottom, #e7cae5, #af8f8f);
 }
 .close-btn {
+  display: none;
   position: absolute;
   right: 1rem;
   /* top: 1rem; */
