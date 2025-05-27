@@ -34,12 +34,15 @@ header nav {
 
 header nav a {
   font-weight: bold;
-  color: #f33737;
-  font-size: 18px;
+  /* color: #f33737; */
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
 }
 
 header nav a:hover {
   color: black;
+  text-decoration: underline;
 }
 
 header h1 {
@@ -66,6 +69,9 @@ header .banner {
 header .banner-title {
   text-align: center;
   margin-bottom: 24px;
+}
+.fa-calendar-days {
+  margin-right: 4px;
 }
 
 .btn {
@@ -364,7 +370,6 @@ main .infos {
 
 .logo {
   width: 50px;
-  margin-bottom: 12px;
 }
 
 .telanon-link {
@@ -417,9 +422,9 @@ footer .socials {
     margin: 12px 0px;
   }
 
-  header nav a {
-    font-size: 24px;
-  }
+  /* header nav a {
+    font-size: 16px;
+  } */
 
   header h1 {
     font-size: 80px;
@@ -628,7 +633,11 @@ footer .socials {
   }
 
   footer .socials {
-    padding: 36px 60px;
+    padding: 36px 110px;
+
+    .logo {
+      width: 60px;
+    }
   }
 
   footer .socials a {
