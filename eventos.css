@@ -1,3 +1,19 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.eventos-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 1
+}
+
+.main-eventos {
+  flex: 1;
+}
+
 .events-banner {
   text-align: center;
   margin-top: 32px;
@@ -85,7 +101,20 @@
   margin: 0px;
 }
 
+.events-footer {
+  position: static;
+}
+
 @media (min-width: 1024px) {
+  .eventos-container {
+    display: block;
+    min-height: auto;
+  }
+
+  .main-eventos {
+    flex: none;
+  }
+
   .events-banner {
     margin-top: 50px;
 
@@ -128,6 +157,10 @@
         height: 100%;
       }
     }
+  }
+
+  .events-footer {
+    position: absolute;
   }
 }
 
