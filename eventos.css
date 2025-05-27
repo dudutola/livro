@@ -85,10 +85,6 @@
   margin: 0px;
 }
 
-/* .bottom {
-  bottom: 0;
-} */
-
 @media (min-width: 1024px) {
   .events-banner {
     h1 {
@@ -131,10 +127,6 @@
       }
     }
   }
-
-  /* .bottom {
-    all: unset;
-  } */
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

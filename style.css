@@ -633,7 +633,9 @@ footer .socials {
   }
 
   footer .socials {
-    padding: 36px 110px;
+    /* padding: 36px 110px; */
+    width: 900px;
+    margin: auto;
 
     .logo {
       width: 60px;
@@ -645,7 +647,8 @@ footer .socials {
   }
 
   .socials-content {
-    width: 80%;
+    /* width: 80%; */
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: end;
