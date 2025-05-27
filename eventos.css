@@ -87,6 +87,8 @@
 
 @media (min-width: 1024px) {
   .events-banner {
+    margin-top: 50px;
+
     h1 {
       font-size: 48px;
     }
