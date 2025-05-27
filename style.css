@@ -434,6 +434,8 @@ footer .socials {
   header .book-cover {
     margin: 0;
     width: 244px;
+    /* rajouté à cause du p fnac, enlever apres, when display none remove this line */
+    height: 86%;
   }
 
   header .banner {
@@ -445,6 +447,11 @@ footer .socials {
 
   header .banner-title {
     text-align: left;
+  }
+
+  .banner-cover {
+    display: flex;
+    align-items: center;
   }
 
   .btn {
