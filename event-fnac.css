@@ -1,3 +1,13 @@
+.fnac {
+  dialog[open] {
+    background-color: #000000e5;
+  }
+
+  #left-arrow, #right-arrow {
+    color: white;
+  }
+}
+
 #author-message p {
   color: #2f4f4f;
   font-weight: 600;
@@ -39,7 +49,38 @@ hr {
   color: #8080801c;
 }
 
+.gallery-buttons {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 70px;
+}
+
+.gallery-buttons button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #264653;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.gallery-buttons button:hover {
+  background-color: #2a9d8f;
+}
+
+
 @media (min-width: 1024px) {
+  .event-fnac {
+    #evento-fotos {
+      grid-template-columns: repeat(4, 1fr);
+      margin: 70px 0 38px;
+
+      .grid-item {
+        height: 200px;
+      }
+    }
+  }
   .moments {
     margin: 34px 0 32px;
   }

@@ -9,9 +9,9 @@
   <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin>
   <link rel="stylesheet" href="../style.css">
   <script src="https://kit.fontawesome.com/37200efcc3.js" crossorigin="anonymous" defer></script>
-  <!-- <script src="./dialog.js" defer></script> -->
+  <script src="./dialog.js" defer></script>
 </head>
-<body>
+<body class="fnac">
   <header>
     <nav>
       <a href="../">
@@ -38,7 +38,7 @@
       </a>
     </div>
   </header>
-  <main>
+  <main class="event-fnac">
     <section id="evento-2025-05-30" class="launch">
       <h2>Apresentação de <br><strong>"ELLYZÉ - Autópsia da Alma"</strong><br> na Fnac Vasco da Gama</h2>
       <div id="launch-content">
@@ -97,7 +97,7 @@
     </section>
 
     <section id="evento-fotos" class="gallery-grid">
-      <dialog>
+      <dialog id="dialog">
         <button class="close">&times;</button>
         <div class="dialog-content">
           <div class="icons">
@@ -109,6 +109,11 @@
         </div>
       </dialog>
     </section>
+
+    <div class="gallery-buttons">
+      <button id="see-more">Ver Mais</button>
+      <button id="see-less" style="display: none;">Ver Menos</button>
+    </div>
   </main>
   <footer>
     <nav>
