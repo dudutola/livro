@@ -4,6 +4,7 @@
   { "id": 2, "src": "../images/fnac/cover-card.webp", "alt": "", "figcaption": "" },
   { "id": 3, "src": "../images/fnac/ordered/2.webp", "alt": "", "figcaption": "" },
   { "id": 4, "src": "../images/fnac/ordered/3.webp", "alt": "", "figcaption": "" },
+  { "id": 5, "src": "../images/fnac/live.webp", "alt": "", "figcaption": "" },
   { "id": 6, "src": "../images/fnac/ordered/43.webp", "alt": "", "figcaption": "" },
   { "id": 7, "src": "../images/fnac/ordered/4.3.webp", "alt": "", "figcaption": "" },
   { "id": 9, "src": "../images/fnac/ordered/4.5.webp", "alt": "", "figcaption": "" },
@@ -50,5 +51,6 @@
   { "id": 52, "src": "../images/fnac/ordered/45.webp", "alt": "", "figcaption": "" },
   { "id": 53, "src": "../images/fnac/ordered/46.webp", "alt": "", "figcaption": "" },
   { "id": 54, "src": "../images/fnac/thumbnail-image.webp", "alt": "", "figcaption": "" },
+  { "id": 55, "src": "../images/fnac/stp.webp", "alt": "", "figcaption": "" },
   { "id": 56, "src": "../images/fnac/ordered/50.webp", "alt": "", "figcaption": "" }
 ]

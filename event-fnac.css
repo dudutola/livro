@@ -25,6 +25,7 @@
   background-color: #f0f7f1a8;
   border-radius: 8px;
   flex-wrap: wrap;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 
   .reporter-img {
     flex: 0 0 34%;
