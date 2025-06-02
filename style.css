@@ -2,6 +2,7 @@
 
 @import "modal.css";
 @import "eventos.css";
+@import "event-fnac.css";
 
 body {
   background-color: #eaf2ea;
@@ -894,11 +895,19 @@ footer .socials {
 
 .launch h2 {
   font-size: 22px;
+
+  strong {
+    font-weight: bold;
+  }
 }
 
 #launch-content {
   text-align: start;
   width: 100%;
+
+  a {
+    color: black;
+  }
 }
 
 .launch p,
@@ -906,7 +915,8 @@ li a {
   font-size: 18px;
 }
 
-#singer {
+#singer,
+#highlight-video {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -921,10 +931,11 @@ video {
   border: 2px solid #ccc;
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  object-fit: cover;
 }
 
-#singer-infos {
+
+#singer-infos,
+#author-message {
   width: 80%;
 }
 
@@ -1070,7 +1081,6 @@ figcaption {
 
 
 @media (min-width: 1024px) {
-
   .launch {
     margin: 40px 0;
   }
@@ -1091,7 +1101,8 @@ figcaption {
     font-size: 18px;
   }
 
-  #singer {
+  #singer,
+  #highlight-video {
     flex-direction: row;
     gap: 40px;
     width: 94%;
@@ -1232,7 +1243,8 @@ figcaption {
     font-size: 18px;
   }
 
-  #singer {
+  #singer,
+  #highlight-video {
     flex-direction: row;
     gap: 40px;
     width: 92%;
