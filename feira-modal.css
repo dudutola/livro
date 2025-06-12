@@ -1,0 +1,136 @@
+#feira-content {
+  background: #2e445c;
+  padding: 2.4rem 2rem;
+  margin: 8% auto;
+  color: white;
+
+  .close-btn {
+    color: white;
+    top: 0.8rem;
+  }
+
+  .feira-poster {
+    width: 100%;
+  }
+
+  .infos {
+    margin-bottom: 24px;
+
+    h2 span {
+      color: #ff001a;
+    }
+
+    .double-quotes {
+      color: white;
+    }
+  }
+
+  .book_presentation {
+    text-align: left;
+    gap: 16px;
+
+    & .book_cover img {
+      width: 124px;
+    }
+
+    .stand {
+      font-size: 14px;
+
+      .color {
+        color: #d5a95a;
+      }
+    }
+  }
+
+  .links-btn {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+
+    .btn {
+      color: white;
+      font-size: 16px;
+      padding: 6px 16px;
+      background-color: #d5a95a;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background-color: #e5af53;
+    }
+  }
+
+  #thanks {
+    color:#A28F81DB;
+  }
+}
+/* #d5a95a */
+/* #dac49e */
+
+
+@media (min-width: 1024px) {
+  #feira-content {
+    margin: 4% auto;
+
+    .infos {
+      margin-bottom: 24px;
+
+      h2 span {
+        color: #ff001a;
+      }
+    }
+
+    .book_presentation {
+      width: 70%;
+      margin: auto;
+
+      & .book_cover img {
+        width: 130px;
+      }
+
+      .stand {
+        font-size: 16px;
+
+        .color {
+          color: #d5a95a;
+        }
+      }
+    }
+
+    .links-btn {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px 0;
+
+      .btn {
+        color: white;
+        font-size: 16px;
+        padding: 6px 16px;
+        background-color: #d5a95a;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none;
+      }
+    }
+
+    #thanks {
+      color:#A28F81DB;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #feira-content {
+    margin: 4% auto;
+
+    .book_presentation {
+      width: 78%;
+      margin: auto;
+    }
+  }
+}
