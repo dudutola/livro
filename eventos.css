@@ -87,7 +87,8 @@ html, body {
 
 .events-card img {
   width: 100%;
-  height: 200px;
+  /* height: 200px; */
+  height: 144px;
   object-fit: cover;
   position: relative;
 }
@@ -154,9 +155,9 @@ html, body {
     }
   }
 
-  .events-cards {
+  /* page eventos */
+  /* .events-cards {
     display: flex;
-    /* gap: 20px; */
     margin: 24px 0 80px;
     justify-content: space-evenly;
 
@@ -164,6 +165,22 @@ html, body {
       width: 344px;
       height: 300px;
       border-radius: 6px;
+
+      img {
+        height: 100%;
+      }
+    }
+  } */
+
+  /* before banner */
+  .events-cards {
+    display: flex;
+    margin-top: 32px;
+
+    .events-card {
+      width: 100%;
+      height: 240px;
+      border-radius: 4px;
 
       img {
         height: 100%;
@@ -177,8 +194,18 @@ html, body {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .events-cards {
+    display: flex;
+    margin-top: 32px;
+
+    .events-card {
+      width: 100%;
+      height: 176px;
+      border-radius: 4px;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
 }
-
-/* Eu pedi que o fundo, espaço onde estão os apoios, seria de um retangulo, em branco.
-
-2 - Uma flor-rosa atravessaria assim como que estivesse por debaixo dos textos, para dar tonalidade feminina, mais realce à publicidade. */
