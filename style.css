@@ -24,22 +24,29 @@ a:focus {
 }
 
 header {
-  margin-top: 20px;
+  margin-top: 68px;
 }
 
 header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 12px 20px;
+  position: fixed;
+  width: 100%;
+  right: 0;
+  left: 0;
+  top: 0;
+  background: #eaf2ea;
+  z-index: 1000;
 }
 
 header nav a {
   font-weight: bold;
-  /* color: #f33737; */
   color: black;
   font-size: 14px;
   text-decoration: none;
+  /* margin: auto; */
+  padding: 20px;
 }
 
 header nav a:hover {
@@ -422,16 +429,17 @@ footer .socials {
   }
 
   header {
-    margin-top: 20px;
+    margin-top: 120px;
   }
 
   header nav {
-    margin: 12px 0px;
+    width: 1200px;
+    margin: auto;
   }
 
-  /* header nav a {
-    font-size: 16px;
-  } */
+  header nav a {
+    padding: 24px 0 18px;
+  }
 
   header h1 {
     font-size: 80px;
@@ -508,6 +516,7 @@ footer .socials {
   main h2 {
     font-size: 32px;
     font-weight: 100;
+    margin-top: 0;
   }
 
   main p {
@@ -644,7 +653,7 @@ footer .socials {
 
   footer .socials {
     /* padding: 36px 110px; */
-    width: 900px;
+    width: 1200px;
     margin: auto;
 
     .logo {
@@ -677,8 +686,8 @@ footer .socials {
     width: 724px;
   }
 
-  header nav {
-    margin: 12px 0px;
+  header {
+    margin-top: 100px;
   }
 
   header h1 {
@@ -744,6 +753,7 @@ footer .socials {
   main h2 {
     font-size: 32px;
     font-weight: 100;
+    margin-top: 0;
   }
 
   main p {
