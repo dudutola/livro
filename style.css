@@ -1151,6 +1151,7 @@ figcaption {
 
   .gallery-grid {
     padding-top: 0;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   main #evento-fotos {
@@ -1158,7 +1159,7 @@ figcaption {
   }
 
   .grid-item {
-    height: 600px;
+    height: 300px;
   }
 
   /* dialog modal */
