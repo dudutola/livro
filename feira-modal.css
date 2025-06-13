@@ -1,6 +1,6 @@
 #feira-content {
   background: #2e445c;
-  padding: 2.4rem 2rem;
+  padding: 1rem;
   margin: 2% auto;
   color: white;
 
@@ -15,6 +15,7 @@
 
   .infos {
     margin-bottom: 24px;
+    text-align: center;
 
     h2 span {
       color: #ff001a;
@@ -73,13 +74,24 @@
 
 @media (min-width: 1024px) {
   #feira-content {
-    margin: 4% auto;
+    margin: auto;
+    border-radius: 8px;
+    border: 1px solid #6587ac;
 
     .infos {
       margin-bottom: 24px;
+      padding: 0 50px;
 
+      h2 {
+        font-size: 40px;
+        margin: 14px;
+      }
       h2 span {
         color: #ff001a;
+      }
+
+      p {
+        font-size: 18px;
       }
     }
 
@@ -126,7 +138,15 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
   #feira-content {
-    margin: 4% auto;
+    margin: auto;
+    border-radius: 8px;
+    border: 1px solid #6587ac;
+
+    .infos {
+      h2 {
+        font-size: 30px;
+      }
+    }
 
     .book_presentation {
       width: 78%;
