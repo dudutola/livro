@@ -175,7 +175,6 @@ html, body {
   /* before banner */
   .events-cards {
     display: flex;
-    margin-top: 32px;
 
     .events-card {
       width: 100%;
@@ -196,7 +195,6 @@ html, body {
 @media (min-width: 768px) and (max-width: 1024px) {
   .events-cards {
     display: flex;
-    margin-top: 32px;
 
     .events-card {
       width: 100%;
