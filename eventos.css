@@ -109,6 +109,18 @@ html, body {
   position: static;
 }
 
+.back-to-event {
+  text-align: end;
+
+  a {
+    color: #0E5FB5;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
 @media (min-width: 1024px) {
   .eventos-container {
     display: block;
