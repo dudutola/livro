@@ -960,7 +960,8 @@ li a {
 }
 
 .fa-square-instagram,
-.fa-envelope {
+.fa-envelope,
+.fa-youtube {
   font-size: 24px;
   padding-right: 8px;
 }
@@ -971,6 +972,11 @@ li a {
 
 .fa-envelope {
   color: #3434ee;
+}
+
+.fa-youtube {
+  color: red;
+  padding-right: 4px;
 }
 
 #nos-por-la-link:visited {
