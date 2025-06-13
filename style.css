@@ -77,21 +77,21 @@ header .banner-title {
 }
 
 .btn {
-  border: 0px;
-  background-color: #b5d3eb;
-  padding: 14px 18px;
+  border: none;
+  background-color: #63a5da;
+  padding: 14px 24px;
   font-size: 18px;
   font-weight: bold;
-  border-radius: 8px;
+  border-radius: 6px;
   cursor: pointer;
-  color: #003366;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .btn:hover {
-  color: #ffffff;
-  /* background-color: #91c4ed; */
-  background-color: #63a5da;
-
+  background-color: #4b91c1;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
 }
 
 .btn-desktop {
@@ -218,6 +218,11 @@ main .price {
   align-items: center;
   margin: 36px 0 32px;
   text-align: center;
+
+  h2 {
+    font-size: 18px;
+    font-weight: 600;
+  }
 }
 
 main .card {
@@ -462,7 +467,6 @@ footer .socials {
   }
 
   .btn {
-    padding: 14px 26px;
     font-size: 20px;
   }
 
@@ -550,6 +554,10 @@ footer .socials {
     flex-direction: column;
     align-items: center;
     margin: 36px 0 66px;
+
+    h2 {
+      font-size: 20px;
+    }
   }
 
   main .card {
@@ -670,7 +678,7 @@ footer .socials {
   }
 
   header nav {
-    margin: 0;
+    margin: 12px 0px;
   }
 
   header h1 {
@@ -697,11 +705,6 @@ footer .socials {
 
   header .banner-title {
     text-align: left;
-  }
-
-  .btn {
-    padding: 14px 26px;
-    font-size: 24px;
   }
 
   .btn-mobile {
@@ -787,6 +790,8 @@ footer .socials {
     flex-direction: column;
     align-items: center;
     margin: 36px 0 66px;
+
+
   }
 
   main .card {
