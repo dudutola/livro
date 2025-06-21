@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A página procurada já não existe (404)</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #eaf2ea;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .error_content {
+    margin-bottom: 30px;
+  }
+  .error_content p {
+    font-size: 18px;
+  }
+
+  .error_numbers {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+    font-weight: bold;
+  }
+  .error_numbers div {
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    color: #b30000;
+    padding: 20px;
+  }
+  .n1 { transform: translateY(0px); }
+  .n2 { transform: translateY(30px); }
+  .n3 { transform: translateY(60px); }
+
+  .rails-default-error-page h1 {
+    font-size: 24px;
+    line-height: 1.5em;
+    margin-bottom: 0;
+  }
+
+  .rails-default-error-page a {
+    border: 1px solid transparent;
+    padding: 10px 24px;
+    border-radius: 0 34px 0 34px;
+    background-color: #b30000a1;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .rails-default-error-page a:hover {
+    background-color: #b30000ae;
+  }
+
+  @media (min-width: 1024px) {
+    .error_content {
+      margin-bottom: 40px;
+    }
+
+    .error_numbers div {
+      font-size: 120px;
+    }
+
+    .rails-default-error-page h1 {
+      font-size: 32px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .error_content {
+      margin-bottom: 40px;
+    }
+
+    .error_numbers div {
+      font-size: 100px;
+    }
+
+    .rails-default-error-page h1 {
+      font-size: 32px;
+    }
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/404.html -->
+  <div class="error_content">
+    <div class="error_numbers">
+      <div class="n1"><i>4</i></div>
+      <div class="n2"><i>0</i></div>
+      <div class="n3"><i>4</i></div>
+    </div>
+
+    <h1>Oops. Página não encontrada.</h1>
+    <p>A página que procuras já não existe.</p>
+  </div>
+  <p><a href="/">Voltar para Zmacar</a></p>
+</body>
+</html>
